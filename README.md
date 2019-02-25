@@ -11,7 +11,7 @@ Match your points to the random number to win. If the total Score exceeds more t
 * JQuery - to update the HTML element values 
 
 ## Game Screenshot 
-[Crystals Gem Collector!](https://github.com/NVK2016/Crystal-Gem-Collector-Game/blob/master/Crystal-Gem-ScreenShot.png?raw=true)
+![Crystals Gem Collector](https://github.com/NVK2016/Crystal-Gem-Collector-Game/blob/master/Crystal-Gem-ScreenShot.png?raw=true)
 
 ## Game Link 
 click the below link to access the game 
