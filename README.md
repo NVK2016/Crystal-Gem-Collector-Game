@@ -14,4 +14,5 @@ Match your points to the random number to win. If the total Score exceeds more t
 
 ## Game Link 
 click the below link to access the game 
-<a href="#">Crystam Gem Collector Game</a> 
+<br /> 
+<a href="https://nvk2016.github.io/Crystal-Gem-Collector-Game/">Crystal Gem Collector Game</a> 
