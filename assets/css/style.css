@@ -1,0 +1,66 @@
+/* Image button styling */
+
+.img-button{
+    width:150px; 
+    height: 150px; 
+    background-color: transparent; 
+}
+
+.btn-choice {
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px; 
+    cursor: pointer;
+    border-radius: 16px; /* round edges */
+    border-color: coral; 
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+button {
+    padding-right: 20px;
+    padding-left: 20px; 
+}
+
+button:hover {
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: lightsalmon;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.col-6 { 
+    /* background-color: #98ff98 ;  */
+    width: 30%; 
+    float: left; 
+    height: 100px;
+    padding: 20px; 
+    font-size: 20px;
+    border: solid 2px ; 
+
+}
+
+.instructions{
+    font-family: 'Courgette', cursive;
+    font-size: 16px; 
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    background-image: url(../images/colorful-abstract-crystal-background.jpg);
+}
+#gameHeader{
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center; 
+    margin: 20px; 
+}
+
+.playersScore-text  {
+    font-size: 18px;
+    letter-spacing: 2px;
+    /* background-color: teal;  */
+    color: teal;
+    width: 300px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 15px 15px 0 15px;
+    /* height: 100px; */
+}

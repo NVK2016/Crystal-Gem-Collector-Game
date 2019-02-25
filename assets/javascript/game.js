@@ -44,14 +44,14 @@ $( document ).ready(function(){
 
         if( computersPick === playerFinalScore){
             wins++; 
-            $("#wins-text").text(wins); 
+            $("#wins-text").text("Wins: " + wins); 
             alert("Woo hoo!! you nailed it!!"); 
             //Reset Game 
             resetGame();
         }
         else if( playerFinalScore >  computersPick ){
             losses++; 
-            $("#loss-text").text(losses); 
+            $("#loss-text").text("Loss: " + losses); 
             alert("YOU LOSE..BETTER LUCK NEXT TIME!"); 
             //Reset Game 
             resetGame();
