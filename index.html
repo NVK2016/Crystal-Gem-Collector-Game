@@ -19,13 +19,13 @@
 </head>
 
 <body>
-    <div id="gameHeader" class="heartBeat delay-2s">
+    <div id="gameHeader" class="heartBeat delay-8s text-warning">
         <h1>Fancy Crystals Collector !!</h1>
     </div>
     <br />
 
-    <div class="instructions">
-        <h4>Here's how you play the game</h4>
+    <div class="instructions text-muted">
+        <h5>Here's how you play the game</h5>
         <ol>
             <li>&nbsp;You will be given a random number at the start of the game.</li>
             <li>&nbsp;There are four crystals below. By clicking on a crystal, you will add a specific amount of points to
@@ -37,13 +37,19 @@
         </ol>
     </div>
     <br /> 
-    <div>
-        <div id="computersPick" class="col-6"> RANDOM NUMBER GENERATED
+    <div class="row" > 
+        <div id="computersPick" class="col-4 text-primary"> Number to Guess: 
         </div>
-        <div class="col-6">
+        <div class="col-4 text-success">
             <span id="wins-text"> Wins: #</span>
             <br />
-            <span id="loss-text"> Loss: #</span>
+            <span id="loss-text" class="text-danger"> Loss: #</span>
+            <!-- <img src="assets/images/winner-1.svg" id="winImg" />  -->
+        </div>
+        <div class="playersScore-text text-info">
+            <h4>Total Gems collected: </h4>
+             <span id="finalScore"></span>
+            
         </div>
     </div>
     <br /> 
@@ -61,12 +67,7 @@
             <img src="assets/images/pink-crystal.jpg" alt="Pink Crystal" class="img-button" />
         </button>
     </div>
-    <br/> 
-    <div class="playersScore-text">
-        <h4>Total Gems collected: </h4>
-         <span id="finalScore"></span>
-        
-    </div>
+  
     <!-- Link to javascript file -->
     <script src="assets/javascript/game.js"> </script>
 

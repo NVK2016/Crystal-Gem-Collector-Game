@@ -6,7 +6,7 @@ $( document ).ready(function(){
     // The random number shown at the start of the game should be between 19 - 120.
     var computersPick = Math.floor(Math.random() * 100 + 20 ) ; 
     console.log(computersPick);
-    $("#computersPick").text(computersPick); 
+    $("#computersPick").text("Number to Guess: " + computersPick); 
 
     // Setting up random numbers for each jewel
     // Random number has to be between 1 - 12
@@ -28,7 +28,7 @@ $( document ).ready(function(){
     function resetGame(){
 
         computersPick = Math.floor(Math.random() * 100 + 20 ) ; 
-        $("#computersPick").text(computersPick); 
+        $("#computersPick").text("Number to Guess: " + computersPick); 
 
         crystalOne = Math.floor(Math.random() * 11 + 1); 
         crystalTwo = Math.floor(Math.random() * 11 + 1);  
@@ -40,9 +40,11 @@ $( document ).ready(function(){
         $("#finalScore").text(playerFinalScore); 
     }   
 
+
     function winLoss(){
 
         if( computersPick === playerFinalScore){
+
             wins++; 
             $("#wins-text").text("Wins: " + wins); 
             alert("Woo hoo!! you nailed it!!"); 
@@ -50,8 +52,11 @@ $( document ).ready(function(){
             resetGame();
         }
         else if( playerFinalScore >  computersPick ){
+            
             losses++; 
             $("#loss-text").text("Loss: " + losses); 
+            console.log($("#winnerSound").text);
+            
             alert("YOU LOSE..BETTER LUCK NEXT TIME!"); 
             //Reset Game 
             resetGame();

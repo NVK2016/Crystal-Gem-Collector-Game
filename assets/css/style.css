@@ -4,6 +4,7 @@
     width:150px; 
     height: 150px; 
     background-color: transparent; 
+    margin: auto; 
 }
 
 .btn-choice {
@@ -36,6 +37,7 @@ button:hover {
     padding: 20px; 
     font-size: 20px;
     border: solid 2px ; 
+    font-family: 'Luckiest Guy', cursive;
 
 }
 
@@ -52,18 +54,18 @@ body {
     font-family: 'Luckiest Guy', cursive;
     text-align: center; 
     margin: 20px; 
+    animation-iteration-count: infinite;
 }
 
 .playersScore-text  {
     font-size: 18px;
     letter-spacing: 2px;
-    /* background-color: teal;  */
-    color: teal;
     width: 300px;
     font-family: 'Luckiest Guy', cursive;
     padding: 15px 15px 0 15px;
-    /* height: 100px; */
 }
-#finalScore{
-    float: left; 
+#wins-text, #loss-text, #computersPick{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
