@@ -18,7 +18,9 @@ Win or lose, the game will restart.
 * JQuery - to update the HTML element values 
 
 ## Game Screenshot 
+
 ![Crystals Gem Collector](https://github.com/NVK2016/Crystal-Gem-Collector-Game/blob/master/Crystal-Gem-Screenshot2.png?raw=true)
+
 
 ## Game Link 
 click the below link to access the game 
