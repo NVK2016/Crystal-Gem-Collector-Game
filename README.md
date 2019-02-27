@@ -1,8 +1,15 @@
 # Crystal-Gem-Collector-Game
-How to Play
-You will be given a random number at the start of the game. Use the crystals to match your points to the random number. The value of the crystals changes for every game and you must figure out their values by clicking on them.
+Game Notes: 
+
+You will be given a random number at the start of the game.
+Use the crystals to match your points to the random number. 
+The value of the crystals changes for every game and you must figure out their values by clicking on them.
+
+Each crystal will have a hidden value between 1 and 12.
+The random number at the beginning of the game will be between 19 and 120.
 
 Match your points to the random number to win. If the total Score exceeds more the random number generated, you lose!
+Win or lose, the game will restart.
 
 ## Built With : 
 * HTML 

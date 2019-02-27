@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
     <div id="gameHeader" class="heartBeat delay-8s text-warning">
         <h1>Fancy Crystals Collector !!</h1>
     </div>
@@ -27,47 +28,49 @@
     <div class="instructions text-muted">
         <h5>Here's how you play the game</h5>
         <ol>
-            <li>&nbsp;You will be given a random number at the start of the game.</li>
-            <li>&nbsp;There are four crystals below. By clicking on a crystal, you will add a specific amount of points to
-                your total score.</li>
-            <li>&nbsp;You win the game by matching your total score to the random number.</li>
-            <li>&nbsp;You lose the game if your total score goes above the random number.</li>
-            <li>&nbsp;The value of each crystal is hidden from you until you click on it.</li>
-            <li>&nbsp;Each time when the game starts, the game will change the values of each crystal.</li>
+            <li>At the start of the game, there will be a random number shown to the player.</li>
+            <li> The player will be guessing an answer by clicking any of the four crystals displayed. </li>
+            <!-- <li>Whenever the player clicks on a crystal, there will be a certain amount of points added to the player's overall score.</li> -->
+            <li>Win or Loss the game will restart.</li>
         </ol>
     </div>
-    <br /> 
-    <div class="row" > 
-        <div id="computersPick" class="col-4 text-primary"> Number to Guess: 
+    <br />
+    <div class="row">
+        <div id="computersPick" class="col-4 text-primary"> Number to Win:
         </div>
-        <div class="col-4 text-success">
+        <div class="col-3 text-success">
             <span id="wins-text"> Wins: #</span>
             <br />
             <span id="loss-text" class="text-danger"> Loss: #</span>
-            <!-- <img src="assets/images/winner-1.svg" id="winImg" />  -->
         </div>
         <div class="playersScore-text text-info">
             <h4>Total Gems collected: </h4>
-             <span id="finalScore"></span>
-            
+            <span id="finalScore"></span>
+        </div>
+        <div>
+            <img id="winImg" style="border-style:none; border: none;" /> 
         </div>
     </div>
-    <br /> 
+    <br />
     <div id="crystalsDiv">
-        <button id="btn-Crystal-1" class="btn-choice" value="1" >
-            <img src="assets/images/blue-crystal.jpg" alt="Blue Crystal" class="img-button" />
-        </button>
-        <button id="btn-Crystal-2" class="btn-choice" value="2">
-            <img src="assets/images/orange-crystal.jpg" alt="Orange Crystal" class="img-button" />
-        </button>
-        <button id="btn-Crystal-3" class="btn-choice" value="3">
-            <img src="assets/images/green-crystal.jpg" alt="Green Crystal" class="img-button" />
-        </button>
-        <button id="btn-Crystal-4" class="btn-choice" value="4">
-            <img src="assets/images/pink-crystal.jpg" alt="Pink Crystal" class="img-button" />
-        </button>
+        <p class="subtitle text-danger">Click on the Crystals to Play!</p>
+        <div class="row m-5">
+            <!-- <div class= crystals"> -->
+            <button id="btn-Crystal-1" class="btn-choice" value="1">
+                <img src="assets/images/blue-crystal.jpg" alt="Blue Crystal" class="img-button" />
+            </button>
+            <button id="btn-Crystal-2" class="btn-choice" value="2">
+                <img src="assets/images/orange-crystal.jpg" alt="Orange Crystal" class="img-button" />
+            </button>
+            <button id="btn-Crystal-3" class="btn-choice" value="3">
+                <img src="assets/images/green-crystal.jpg" alt="Green Crystal" class="img-button" />
+            </button>
+            <button id="btn-Crystal-4" class="btn-choice" value="4">
+                <img src="assets/images/pink-crystal.jpg" alt="Pink Crystal" class="img-button" />
+            </button>
+        </div>
     </div>
-  
+</div>
     <!-- Link to javascript file -->
     <script src="assets/javascript/game.js"> </script>
 

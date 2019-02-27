@@ -4,13 +4,13 @@
     width:150px; 
     height: 150px; 
     background-color: transparent; 
-    margin: auto; 
+    /* margin: auto;  */
 }
 
 .btn-choice {
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
-    margin: 10px; 
+    margin-left: 25px; 
     cursor: pointer;
     border-radius: 16px; /* round edges */
     border-color: coral; 
@@ -49,6 +49,7 @@ button:hover {
 body {
     font-family: 'Courgette', cursive;
     background-image: url(../images/colorful-abstract-crystal-background.jpg);
+    margin: auto; 
 }
 #gameHeader{
     font-family: 'Luckiest Guy', cursive;
@@ -68,4 +69,13 @@ body {
     font-family: 'Luckiest Guy', cursive;
     font-size: 18px;
     letter-spacing: 2px;
+}
+
+.subtitle{
+    font-family: 'Courgette', cursive;
+    font-size: 22px;
+}
+
+#winImg{
+    width:100px; height:100px; float:right;
 }

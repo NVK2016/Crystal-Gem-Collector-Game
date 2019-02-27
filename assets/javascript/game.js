@@ -1,5 +1,4 @@
-// 
-
+// GAME LOGIC
 
 $( document ).ready(function(){
 
@@ -21,6 +20,8 @@ $( document ).ready(function(){
     var wins = 0;
     var losses = 0;
 
+    var imgFile = $("#winImg"); 
+     
     // FUNCTIONS 
     // -----------------------------------------------------------------------
 
@@ -39,15 +40,16 @@ $( document ).ready(function(){
         playerFinalScore = 0; 
         $("#finalScore").text(playerFinalScore); 
     }   
-
-
+   
+    // Win or Loss the game increases the counter 
     function winLoss(){
 
         if( computersPick === playerFinalScore){
 
             wins++; 
             $("#wins-text").text("Wins: " + wins); 
-            alert("Woo hoo!! you nailed it!!"); 
+            alert("Woo hoo!! you nailed it!!");
+            imgFile.attr("src", "assets/images/winner-1.svg"); //Add image when the user wins 
             //Reset Game 
             resetGame();
         }
@@ -55,9 +57,8 @@ $( document ).ready(function(){
             
             losses++; 
             $("#loss-text").text("Loss: " + losses); 
-            console.log($("#winnerSound").text);
-            
             alert("YOU LOSE..BETTER LUCK NEXT TIME!"); 
+            imgFile.attr("src", "assets/images/lost-game.svg"); //Add image when the user losses  
             //Reset Game 
             resetGame();
         }
