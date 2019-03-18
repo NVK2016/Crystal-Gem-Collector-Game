@@ -72,7 +72,7 @@ $( document ).ready(function(){
         console.log($(this).val()); 
 
         //In case if Crystal ONe is clicked 
-        if ( $(this).val() == 1) {
+        if ( $(this).val() === 1) {
 
             playerFinalScore += crystalOne; 
             console.log("crystalOne: " + crystalOne);
@@ -82,7 +82,7 @@ $( document ).ready(function(){
             winLoss(); 
         }
         //In case if Crystal Two button is clicked
-        else if ( $(this).val() == 2) {
+        else if ( $(this).val() === 2) {
 
             playerFinalScore += crystalTwo; 
             console.log("crystalTwo: " + crystalTwo);
@@ -92,7 +92,7 @@ $( document ).ready(function(){
             winLoss(); 
 
         }
-        else if ( $(this).val() == 3) {
+        else if ( $(this).val() === 3) {
 
             playerFinalScore += crystalThree; 
             console.log("crystalThree: " + crystalThree);
