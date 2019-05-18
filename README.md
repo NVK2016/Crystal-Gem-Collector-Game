@@ -1,5 +1,6 @@
 # Crystal-Gem-Collector-Game
-Game Notes: 
+
+**Game Notes:**
 
 You will be given a random number at the start of the game.
 Use the crystals to match your points to the random number. 
@@ -23,6 +24,9 @@ Win or lose, the game will restart.
 
 
 ## Game Link 
-click the below link to access the game 
+Play It !! 
 <br /> 
 <a href="https://nvk2016.github.io/Crystal-Gem-Collector-Game/">Crystal Gem Collector Game</a> 
+
+### Owner
+Namita Shenai
